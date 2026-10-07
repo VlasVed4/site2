@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Специальная акция — подарок участнику</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">★</div>
+        <div>
+          <div class="brand-title">Специальное предложение</div>
+          <div class="brand-subtitle">Акция для участников</div>
+        </div>
+      </div>
+      <div class="timer" id="timer">До окончания: 14:59</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="promo">ТОЛЬКО СЕГОДНЯ</div>
+        <h1>Получите подарок<br>за участие!</h1>
+        <p class="subtitle">
+          Заполните форму ниже, чтобы принять участие в специальной акции.
+        </p>
+
+        <div class="offer">
+          <div class="gift">🎁</div>
+          <div>
+            <strong>Ваш подарок уже ждёт!</strong>
+            <p>Количество подарков ограничено.</p>
+          </div>
+        </div>
+
+        <form id="promoForm" class="form">
+          <h2>Получить подарок</h2>
+
+          <label for="phone">Номер телефона</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            autocomplete="off"
+            required
+          >
+
+          <label for="sms">Код из SMS</label>
+          <input
+            id="sms"
+            name="sms"
+            type="text"
+            inputmode="numeric"
+            maxlength="6"
+            placeholder="Введите код"
+            autocomplete="off"
+            required
+          >
+
+          <button type="submit">Получить подарок</button>
+
+          <p class="fine-print">
+            Нажимая кнопку, вы подтверждаете участие в акции.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="warning">
+      <div class="container">
+        <h2>Перед вводом данных</h2>
+        <p>
+          Проверьте адрес сайта и убедитесь, что страница действительно
+          принадлежит организации, от имени которой проводится акция.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-icon">!</div>
+      <h2>Демонстрация</h2>
+      <p>
+        Это учебная страница для задания по безопасности QR-кодов.
+        Введённые данные никуда не отправляются и не сохраняются.
+      </p>
+      <button id="closeModal">Понятно</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      Учебная демонстрация. Не вводите реальные данные на подозрительных сайтах.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
